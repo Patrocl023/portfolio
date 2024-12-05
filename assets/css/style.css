@@ -1,0 +1,88 @@
+:root {
+  --background-color: #36517c;
+  --border-color: #46b2e2;
+}
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: white;
+  font-size: large;
+  /* background-image: url("../img/hb.png"); */
+  background-repeat: no-repeat;
+}
+img,
+svg {
+  width: 100%;
+  height: auto;
+}
+p {
+  color: #b1c4da;
+}
+.mientras {
+  width: 300px;
+  height: 300px;
+  background-color: indigo;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.28s ease;
+  &:hover:not(a.btn) {
+    color: #46b2e4;
+  }
+  &.btn {
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 2rem;
+    border-radius: 26px;
+    transition: background-color 0.2s linear;
+  }
+}
+a.btn:hover {
+  background-color: var(--border-color);
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+header,
+main {
+  display: flex;
+  align-items: center;
+}
+header {
+  margin-block: 0.6em;
+  justify-content: space-around;
+  /* padding-inline: 2rem; */
+  /* gap: 4m; */
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+main {
+  /* padding: 4em 2em; */
+  min-height: 70vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em;
+  article {
+    max-width: 35vw;
+    font-size: 1.5em;
+    h1 {
+      font-size: 2.5em;
+    }
+    a.btn {
+      margin-inline-end: 1em;
+    }
+    a:last-child::before {
+      content: url("../ico/video.png");
+    }
+  }
+  figure {
+    max-width: 30vw;
+    min-width: 275px;
+  }
+}
