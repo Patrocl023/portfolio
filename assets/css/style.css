@@ -68,19 +68,33 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 4em;
-  article {
-    max-width: 35vw;
-    font-size: 1.5em;
-    h1 {
-      font-size: 2.5em;
-    }
-    a.btn {
-      margin-inline-end: 1em;
-    }
-    a:last-child::before {
-      content: url("../ico/video.png");
-    }
-  }
+  article {  
+    max-width: 35vw;  
+    font-size: 1.5em;  
+
+    h1 {  
+        font-size: 2.5em;  
+    }  
+
+    a.btn {  
+        margin-inline-end: 1em;  
+    }  
+
+    a:last-child {  
+        position: relative;
+        padding-left: 2.5em; 
+        display: inline-flex; 
+        align-items: center;
+    }  
+
+    a:last-child::before {  
+        content: url("../ico/video.png");  
+        display: block;
+        width: 2em;
+        height: auto; 
+        margin-right: 0.5em;
+    }  
+}
   figure {
     max-width: 30vw;
     min-width: 275px;
